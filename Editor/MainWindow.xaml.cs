@@ -623,16 +623,6 @@ namespace Editor
             get { return new System.Windows.Interop.WindowInteropHelper(this).Handle; }
         }
 
-        private void meLinkClick(object sender, RoutedEventArgs e)
-        {
-            BrowserHelper.Open("http://mathiversity.com/MathEditor");
-        }
-
-        private void spiroLinkClick(object sender, RoutedEventArgs e)
-        {
-            BrowserHelper.Open("http://mathiversity.com/Spirograph");
-        }
-
         public bool InputBold
         {
             get
@@ -799,6 +789,7 @@ namespace Editor
 
         public static void PrintStatusMessage(string message)
         {
+            // TODO: Implement this method
             window.SetStatusBarMessage(message);
         }
 

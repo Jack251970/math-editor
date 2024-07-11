@@ -18,7 +18,8 @@
     </Style>
 
     <SolidColorBrush x:Key="ButtonNormalBorder" Color="Black"/>
-
+    
+    <!-- // TODO: Remove this if need -->
     <Style x:Key="GrayButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
         <Setter Property="Background" Value="LightGray"/>
