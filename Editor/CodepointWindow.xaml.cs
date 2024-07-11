@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using MessageBox = iNKORE.UI.WPF.Modern.Controls.MessageBox;
 
 namespace Editor
 {

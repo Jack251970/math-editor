@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using MessageBox = iNKORE.UI.WPF.Modern.Controls.MessageBox;
 
 namespace Editor
 {

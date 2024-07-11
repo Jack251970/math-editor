@@ -84,6 +84,7 @@
         </Setter>
     </Style>
 
+    <!-- // TODO: Remove this if need -->
     <Style x:Key="fullScreenButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="Template">
             <Setter.Value>
