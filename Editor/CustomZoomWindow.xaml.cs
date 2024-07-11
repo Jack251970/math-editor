@@ -11,6 +11,7 @@ namespace Editor
     {
         int maxPercentage = 9999;
         MainWindow mainWindow = null;
+
         public CustomZoomWindow(MainWindow mainWindow)
         {
             this.mainWindow = mainWindow;

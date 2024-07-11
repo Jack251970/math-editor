@@ -11,9 +11,11 @@ namespace Editor
     public partial class CodepointWindow : Window
     {
         string numberBase = "10";
+        MainWindow mainWindow = null;
 
-        public CodepointWindow()
+        public CodepointWindow(MainWindow mainWindow)
         {
+            this.mainWindow = mainWindow;
             InitializeComponent();
             numberBox.Focus();
         }

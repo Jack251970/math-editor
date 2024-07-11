@@ -15,13 +15,15 @@ namespace Editor
     /// </summary>
     public partial class UnicodeSelectorWindow : Window
     {
+        MainWindow mainWindow = null;
         Dictionary<string, ObservableCollection<UnicodeListItem>> categories = new Dictionary<string, ObservableCollection<UnicodeListItem>>();
         //Dictionary<int, Dictionary<string, ObservableCollection<UnicodeListItem>>> fontCache = new Dictionary<int, Dictionary<string, ObservableCollection<UnicodeListItem>>>();
         ObservableCollection<UnicodeListItem> recentList = new ObservableCollection<UnicodeListItem>();
         ObservableCollection<UnicodeListItem> allList = new ObservableCollection<UnicodeListItem>();
         
-        public UnicodeSelectorWindow()
+        public UnicodeSelectorWindow(MainWindow mainWindow)
         {
+            this.mainWindow = mainWindow;
             InitializeComponent();
             DataContext = this;
             symbolListBox.FontFamily = FontFactory.GetFontFamily(FontType.STIXGeneral);

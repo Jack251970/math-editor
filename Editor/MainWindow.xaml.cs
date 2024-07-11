@@ -584,8 +584,8 @@ namespace Editor
         {
             if (symbolWindow == null)
             {
-                symbolWindow = new UnicodeSelectorWindow();
-                //symbolWindow.Owner = this;
+                symbolWindow = new UnicodeSelectorWindow(this);
+                symbolWindow.Owner = this;
             }
             symbolWindow.Show();
             symbolWindow.Activate();
@@ -596,8 +596,8 @@ namespace Editor
         {
             if (codePointWindow == null)
             {
-                codePointWindow = new CodepointWindow();
-                //codePointWindow.Owner = this;
+                codePointWindow = new CodepointWindow(this);
+                codePointWindow.Owner = this;
             }
             codePointWindow.Show();
             codePointWindow.Activate();
