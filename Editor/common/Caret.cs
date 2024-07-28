@@ -27,10 +27,6 @@ namespace Editor
             {
                 dc.DrawLine(PenManager.GetPen(Math.Max(1, EditorControl.RootFontSize * .8 / EditorControl.rootFontBaseSize)), Location, OtherPoint);
             }
-            else if (_isHorizontal)
-            {
-                dc.DrawLine(PenManager.GetWhitePen(Math.Max(1, EditorControl.RootFontSize *.8 / EditorControl.rootFontBaseSize)), Location, OtherPoint);
-            }
         }
 
         private Point OtherPoint => _isHorizontal ? new Point(Left + CaretLength, Top) : new Point(Left, VerticalCaretBottom);
